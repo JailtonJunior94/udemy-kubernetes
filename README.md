@@ -14,3 +14,14 @@
    R: Namespace é um "espaço" na qual separamos nossos recursos dentro do Kubernetes em áreas separadas.
 
 5. O que é o Service? <br>
+   R: Services em Kubernetes permite a comunicação entre os diversos componentes de uma aplicação com o mundo externo á ela.
+   Além disso permite que possamos conectar facilmente uma aplicação com outra e claro com usuários externos.
+
+6. Para criar todos os recursos de uma única vez, utilizar: 
+   ```
+   kubectl create -f .\deployments\ --save-config --record
+   ```
+7. Pegando IP dos Services 
+   ```
+   minikube service result --url -n vote
+   ```
