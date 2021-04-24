@@ -23,5 +23,9 @@
    ```
 7. Pegando IP dos Services 
    ```
-   minikube service result --url -n vote
+   minikube service sqlserver-service --url -n vote
+   ```
+8. Commando para scale
+   ```
+   kubectl scale --replicas=4 deployment financialapi-deployment
    ```
